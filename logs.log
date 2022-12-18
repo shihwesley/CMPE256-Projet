@@ -5574,3 +5574,96 @@ model.fit(X, y, **kwargs)
 2022-12-18 05:16:25,178:INFO:tune_model() successfully completed......................................
 2022-12-18 05:17:42,869:INFO:Visual Rendered Successfully
 2022-12-18 05:34:29,361:INFO:Visual Rendered Successfully
+2022-12-18 05:52:12,477:INFO:Initializing tune_model()
+2022-12-18 05:52:12,478:INFO:tune_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f3ed899ce80>, estimator=ExponentialSmoothing(seasonal='add', sp=7, trend='add'), fold=None, round=4, n_iter=10, custom_grid=None, optimize=MASE, custom_scorer=None, search_algorithm=None, choose_better=True, fit_kwargs=None, return_tuner=False, verbose=True, tuner_verbose=True, kwargs={}, search_library=pycaret, _allowed_search_algorithms=[None, 'random', 'grid'])
+2022-12-18 05:52:12,478:INFO:Checking exceptions
+2022-12-18 05:52:12,501:INFO:Copying training dataset
+2022-12-18 05:52:12,506:INFO:Checking base model
+2022-12-18 05:52:12,506:INFO:Base model : Exponential Smoothing
+2022-12-18 05:52:12,512:INFO:Declaring metric variables
+2022-12-18 05:52:12,516:INFO:Defining Hyperparameters
+2022-12-18 05:52:12,632:INFO:Tuning with n_jobs=-1
+2022-12-18 05:52:12,633:INFO:Initializing ForecastingRandomizedGridSearchCV
+2022-12-18 05:52:51,074:INFO:best_params: {'forecaster__model__use_boxcox': False, 'forecaster__model__trend': None, 'forecaster__model__sp': 7, 'forecaster__model__seasonal': 'add'}
+2022-12-18 05:52:51,076:INFO:Hyperparameter search completed
+2022-12-18 05:52:51,076:INFO:SubProcess create_model() called ==================================
+2022-12-18 05:52:51,077:INFO:Initializing create_model()
+2022-12-18 05:52:51,077:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f3ed899ce80>, estimator=ExponentialSmoothing(seasonal='add', sp=7, trend='add'), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={'fh': ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True)}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f3ed899f2b0>, model_only=True, return_train_score=False, kwargs={'use_boxcox': False, 'trend': None, 'sp': 7, 'seasonal': 'add'})
+2022-12-18 05:52:51,078:INFO:Checking exceptions
+2022-12-18 05:52:51,081:INFO:Importing libraries
+2022-12-18 05:52:51,081:INFO:Copying training dataset
+2022-12-18 05:52:51,084:INFO:Defining folds
+2022-12-18 05:52:51,084:INFO:Declaring metric variables
+2022-12-18 05:52:51,090:INFO:Importing untrained model
+2022-12-18 05:52:51,090:INFO:Declaring custom model
+2022-12-18 05:52:51,096:INFO:Exponential Smoothing Imported successfully
+2022-12-18 05:52:51,105:INFO:Starting cross validation
+2022-12-18 05:52:51,107:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True),
+                        initial_window=1784, step_length=12), n_jobs=-1
+2022-12-18 05:52:54,315:INFO:Calculating mean and std
+2022-12-18 05:52:54,316:INFO:Creating metrics dataframe
+2022-12-18 05:52:54,329:INFO:Finalizing model
+2022-12-18 05:52:54,946:INFO:Uploading results into container
+2022-12-18 05:52:54,947:INFO:Uploading model into container now
+2022-12-18 05:52:54,947:INFO:master_model_container: 35
+2022-12-18 05:52:54,947:INFO:display_container: 20
+2022-12-18 05:52:54,948:INFO:ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False)
+2022-12-18 05:52:54,948:INFO:create_model() successfully completed......................................
+2022-12-18 05:52:55,086:INFO:SubProcess create_model() end ==================================
+2022-12-18 05:52:55,086:INFO:choose_better activated
+2022-12-18 05:52:55,092:INFO:SubProcess create_model() called ==================================
+2022-12-18 05:52:55,092:INFO:Initializing create_model()
+2022-12-18 05:52:55,092:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f3ed899ce80>, estimator=ExponentialSmoothing(seasonal='add', sp=7, trend='add'), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={'fh': ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True)}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2022-12-18 05:52:55,093:INFO:Checking exceptions
+2022-12-18 05:52:55,097:INFO:Importing libraries
+2022-12-18 05:52:55,097:INFO:Copying training dataset
+2022-12-18 05:52:55,099:INFO:Defining folds
+2022-12-18 05:52:55,099:INFO:Declaring metric variables
+2022-12-18 05:52:55,099:INFO:Importing untrained model
+2022-12-18 05:52:55,099:INFO:Declaring custom model
+2022-12-18 05:52:55,100:INFO:Exponential Smoothing Imported successfully
+2022-12-18 05:52:55,101:INFO:Starting cross validation
+2022-12-18 05:52:55,102:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True),
+                        initial_window=1784, step_length=12), n_jobs=-1
+2022-12-18 05:52:59,254:INFO:Calculating mean and std
+2022-12-18 05:52:59,255:INFO:Creating metrics dataframe
+2022-12-18 05:52:59,259:INFO:Finalizing model
+2022-12-18 05:53:00,059:INFO:Uploading results into container
+2022-12-18 05:53:00,059:INFO:Uploading model into container now
+2022-12-18 05:53:00,059:INFO:master_model_container: 36
+2022-12-18 05:53:00,059:INFO:display_container: 21
+2022-12-18 05:53:00,060:INFO:ExponentialSmoothing(seasonal='add', sp=7, trend='add')
+2022-12-18 05:53:00,060:INFO:create_model() successfully completed......................................
+2022-12-18 05:53:00,168:INFO:SubProcess create_model() end ==================================
+2022-12-18 05:53:00,169:INFO:ExponentialSmoothing(seasonal='add', sp=7, trend='add') result for MASE is 1.0265
+2022-12-18 05:53:00,169:INFO:SubProcess create_model() called ==================================
+2022-12-18 05:53:00,170:INFO:Initializing create_model()
+2022-12-18 05:53:00,170:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f3ed899ce80>, estimator=ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False), fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={'fh': ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True)}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, kwargs={})
+2022-12-18 05:53:00,170:INFO:Checking exceptions
+2022-12-18 05:53:00,173:INFO:Importing libraries
+2022-12-18 05:53:00,174:INFO:Copying training dataset
+2022-12-18 05:53:00,176:INFO:Defining folds
+2022-12-18 05:53:00,176:INFO:Declaring metric variables
+2022-12-18 05:53:00,176:INFO:Importing untrained model
+2022-12-18 05:53:00,176:INFO:Declaring custom model
+2022-12-18 05:53:00,177:INFO:Exponential Smoothing Imported successfully
+2022-12-18 05:53:00,178:INFO:Starting cross validation
+2022-12-18 05:53:00,179:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], dtype='int64', is_relative=True),
+                        initial_window=1784, step_length=12), n_jobs=-1
+2022-12-18 05:53:02,716:INFO:Calculating mean and std
+2022-12-18 05:53:02,717:INFO:Creating metrics dataframe
+2022-12-18 05:53:02,720:INFO:Finalizing model
+2022-12-18 05:53:03,156:INFO:Uploading results into container
+2022-12-18 05:53:03,157:INFO:Uploading model into container now
+2022-12-18 05:53:03,157:INFO:master_model_container: 37
+2022-12-18 05:53:03,157:INFO:display_container: 21
+2022-12-18 05:53:03,158:INFO:ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False)
+2022-12-18 05:53:03,158:INFO:create_model() successfully completed......................................
+2022-12-18 05:53:03,268:INFO:SubProcess create_model() end ==================================
+2022-12-18 05:53:03,269:INFO:ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False) result for MASE is 1.0195
+2022-12-18 05:53:03,269:INFO:ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False) is best model
+2022-12-18 05:53:03,269:INFO:choose_better completed
+2022-12-18 05:53:03,282:INFO:master_model_container: 37
+2022-12-18 05:53:03,283:INFO:display_container: 20
+2022-12-18 05:53:03,283:INFO:ExponentialSmoothing(seasonal='add', sp=7, use_boxcox=False)
+2022-12-18 05:53:03,283:INFO:tune_model() successfully completed......................................
